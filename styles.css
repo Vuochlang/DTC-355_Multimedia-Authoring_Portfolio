@@ -1,0 +1,226 @@
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed, 
+figure, figcaption, footer, header, hgroup, 
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+    margin: 0;
+    padding: 0;
+    border: 0;
+    font-size: 100%;
+    font: inherit;
+    vertical-align: baseline;
+}
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure, 
+footer, header, hgroup, menu, nav, section {
+    display: block;
+}
+body {
+    line-height: 1;
+}
+ol, ul {
+    list-style: none;
+}
+blockquote, q {
+    quotes: none;
+}
+blockquote:before, blockquote:after,
+q:before, q:after {
+    content: '';
+    content: none;
+}
+table {
+    border-collapse: collapse;
+    border-spacing: 0;
+}
+
+/*don't touch the reset above*/
+
+
+
+
+
+/* Default Styles Below*/
+
+:root {
+    --main-color: #0a0a0a;
+    --secondary-color: #FF9000;
+  }
+
+body {
+    font-size: 20px;
+}
+
+#body-wrapper {
+    max-width: 700px;
+    margin: 5% auto;
+    border: 1px solid red;
+}
+
+#grid-container {
+    /* display: grid;
+    grid-template-columns: 3fr 1fr; */
+}
+
+header {
+    padding: 2%;
+    border: 1px solid orange;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+}
+
+nav {
+    border: 1px solid blue;
+    padding: 2%;
+}
+
+nav ul {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    grid-gap: 2px;
+    border: 1px solid green;
+}
+
+nav li a  {
+    display: block;
+    text-align: center;
+}
+
+
+#main {
+    min-height: 400px;
+    height: 68vh;
+    padding: 5%;
+    border: 1px solid lightblue;
+}
+
+aside {
+    padding: 5%;
+    border: 1px solid lightgreen;
+}
+
+footer {
+    padding: 5%;
+    border: 1px solid yellow;
+    text-align: center;
+}
+
+#my-name {
+    font-size: 30px;
+}
+
+#intro {
+    height: 50vh;
+    text-align: center;
+}
+
+#projects {
+    border: 1px solid green;
+    display: grid;
+    grid-template-rows: 1fr 1fr 1fr;
+}
+
+.project {
+    border: 1px solid pink;
+    margin: 5% 10%;
+    height: 600px;
+}
+
+.project-info {
+    border: 1px solid orange;
+    display: grid;
+    grid-template-rows: 1fr 4fr;
+    grid-template-columns: 1fr;
+    height: 90%;
+}
+
+.project-info section {
+    border: 1px solid black;
+}   
+
+a {
+    text-decoration: none;
+    color: var(--main-color);
+}
+
+a:hover {
+    color: var(--secondary-color);
+}
+
+#footer {
+    /* height: 0px; */
+}
+
+#footer-grid {
+    border: 1px solid black;
+    display: grid;
+    grid-template-rows: 1fr 1fr 1fr;
+    grid-template-columns: 1fr;
+}
+
+#footer-grid section {
+    margin: 3%;
+    border: 1px solid green;
+    height: 100px;
+}
+
+
+@media only screen and (min-width: 751px) and (max-width: 1000px) {
+    #body-wrapper {
+        max-width: 900px;
+        margin: 5% auto;
+    }
+
+    .project {
+        height: 600px;
+    }
+
+    .project-info {
+        grid-template-columns: 1fr 2fr;
+        grid-template-rows: 1fr;
+        height: 90%;
+    }
+
+    #footer-grid {
+        grid-template-columns: 1fr 1fr 1fr;
+        grid-template-rows: 1fr;
+    }
+    
+    #footer-grid section {
+        height: 200px;
+    }
+}
+
+@media only screen and (min-width: 1001px) {
+    #body-wrapper {
+        max-width: 900px;
+        margin: 5% auto;
+    }
+
+    .project {
+        height: 600px;
+    }
+
+    .project-info {
+        grid-template-columns: 1fr 2fr;
+        grid-template-rows: 1fr;
+        height: 90%;
+    }
+
+    #footer-grid {
+        grid-template-columns: 1fr 1fr 1fr;
+        grid-template-rows: 1fr;
+    }
+    
+    #footer-grid section {
+        height: 200px;
+    }
+}

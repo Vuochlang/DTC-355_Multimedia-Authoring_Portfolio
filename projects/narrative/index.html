@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta charset="utf-8">
+		<meta name="viewport" content="width=device-width, initial-scale=1">
+		<title>Eight Planets In Our Solar System</title>
+		<link rel="stylesheet" href="styles.css">
+		<link rel="preconnect" href="https://fonts.googleapis.com">
+		<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+		<link href="https://fonts.googleapis.com/css2?family=Courgette&family=Oleo+Script+Swash+Caps&family=Quando&family=Yanone+Kaffeesatz:wght@600&display=swap" rel="stylesheet">
+
+		<link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">
+
+		<script src="skrollr.min.js" defer></script>
+		<script src="jquery.js" defer></script>
+	</head>
+
+	<body data-0="" data-10000="">
+
+		<div id="scrollCount">0</div>
+
+		<div id="div1" class="view-bg" 
+		data-0="height: 100vh" 
+		data-1100="">
+			<div class="content">
+				<h2>Eight Planets In Our Solar System</h2>
+				<p>Size of the planet, Distance from the Sun, Duration to complete a single orbit</p>
+			</div>
+		</div>
+
+		<button id="arrow-next" data-0="opacity:0" data-500="opacity:1" data-1100=""
+		class="btn"  onclick="nextPlanet()">
+			<i class="material-icons">navigate_next</i>
+		</button>
+		<button id="arrow-back" data-0="opacity:0" data-500="opacity:1"
+		class="btn" onclick="previousPlanet()">
+			<i class="material-icons">navigate_before</i>
+		</button>
+
+		<div id="div2" class="view-bg"
+			data-0="opacity:0;" 
+			data-center="opacity:1;" 
+			data-10000="">
+
+			<h3 id="name" data-0="opacity:0;"  data-1000="opacity:1">Sun</h3>
+			<div id="info" data-0="opacity:0;"  data-1000="opacity:1">
+				<ul>
+					<li>Diameter: <span>1.3927 million km</span></li>
+				</ul>
+			</div>
+
+
+			<img id="img1" alt="Sun"
+				data-0="transform: rotate(0deg) scale(0.5); opacity:0; left:60%;"
+				data-700="opacity:0.5"
+				data-1000="transform: rotate(-360deg) scale(1); opacity:1; left:40%;"
+				data-2000="transform: rotate(-720deg) scale(0.5); opacity:0; left:0%;"
+				src="img/1.png">
+
+			<img id="img2" alt="Mercury"
+				data-900="transform: rotate(0deg) scale(0.5); opacity:0.5; left:80%;"
+				data-2000="transform: rotate(-360deg) scale(1); opacity:1; left:40%;"
+				data-3000="transform: rotate(-720deg) scale(0.5); opacity:0; left:0%;"
+				src="img/2.png">
+			<img id="img3" alt="Venus"
+				data-1900="opacity:0" 
+				data-2000="transform: rotate(0deg) scale(0.5); opacity:0.5; left:80%;"
+				data-3000="transform: rotate(-360deg) scale(1); opacity:1; left:40%;"
+				data-4000="transform: rotate(-720deg) scale(0.5); opacity:0; left:0%;"
+				src="img/3.png">
+			<img id="img4" alt="Earth"
+				data-2900="opacity:0" 
+				data-3000="transform: rotate(0deg) scale(0.5); opacity:0.5; left:80%;"
+				data-4000="transform: rotate(-360deg) scale(1); opacity:1; left:40%;"
+				data-5000="transform: rotate(-720deg) scale(0.5); opacity:0; left:0%;"
+				src="img/4.png">
+			<img id="img5" alt="Mars"
+				data-3900="opacity:0" 
+				data-4000="transform: rotate(0deg) scale(0.5); opacity:0.5; left:80%;"
+				data-5000="transform: rotate(-360deg) scale(1); opacity:1; left:40%;"
+				data-6000="transform: rotate(-720deg) scale(0.5); opacity:0; left:0%;"
+				src="img/5.png">
+			<img id="img6" alt="Jupiter"
+				data-4900="opacity:0" 
+				data-5000="transform: rotate(0deg) scale(0.5); opacity:0.5; left:80%;"
+				data-6000="transform: rotate(-360deg) scale(1); opacity:1; left:40%;"
+				data-7000="transform: rotate(-720deg) scale(0.5); opacity:0; left:0%;"
+				src="img/6.png">
+			<img id="img7" alt="Saturn"
+				data-5900="opacity:0" 
+				data-6000="transform: rotate(0deg) scale(0.5); opacity:0.5; left:80%;"
+				data-7000="transform: rotate(-360deg) scale(1); opacity:1; left:40%;"
+				data-8000="transform: rotate(-720deg) scale(0.5); opacity:0; left:0%;"
+				src="img/7.png">
+			<img id="img8" alt="Uranus"
+				data-6900="opacity:0" 
+				data-7000="transform: rotate(0deg) scale(0.5); opacity:0.5; left:80%;"
+				data-8000="transform: rotate(-360deg) scale(1); opacity:1; left:40%;"
+				data-9000="transform: rotate(-720deg) scale(0.5); opacity:0; left:0%;"
+				src="img/8.png">
+			<img id="img9" alt="Neptune"
+				data-7900="opacity:0" 
+				data-8000="transform: rotate(0deg) scale(0.5); opacity:0.5; left:80%;"
+				data-9000="transform: rotate(-360deg) scale(1); opacity:1; left:40%;"
+				data-10000="transform: rotate(-720deg) scale(0.5); opacity:0; left:0%;"
+				src="img/9.png">
+
+			<div data-0="opacity:0">
+				<p>This narrative project is a combination of Skrollr and jQueryt. I wanted to combine each functionality and learn how they can connect. I came up with this project idea because I wanted to create a smooth flow between objects and add buttons to interact with the screen. While building this project, my challenges and learning outcome are using jQuery to change the properties of things from the HTML file.</p>
+			</div>
+		</div>
+	</body>
+</html>

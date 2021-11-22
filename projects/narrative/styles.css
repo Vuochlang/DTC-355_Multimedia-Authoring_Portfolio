@@ -1,0 +1,164 @@
+html, body {  
+      margin: 0;  
+      padding: 0; 
+      font-size: 30px;
+	background-image: url(img/galaxy.jpg);
+	background-size: cover;
+	background-attachment: fixed;
+}
+
+#scrollCount  {
+    	position: fixed;
+	top: 5%;
+	right: 3%;
+	padding: 1% 1%;
+    	color: white;
+    	background: #931A0B;
+    	z-index: 11;
+    	text-align: center;
+    	font-size: 0.4em;
+}
+
+h2 {
+	font-family: 'Oleo Script Swash Caps', cursive;
+}
+
+#div1 p {
+	font-family: 'Yanone Kaffeesatz', sans-serif;
+	letter-spacing: 1px;
+}
+
+#icon img{
+	width: 100%;
+	max-width: 100px;
+	position: fixed;
+	top: 65%;
+	z-index: 9;
+	opacity: 1;
+}
+
+.view-bg img {
+	width: 100%;
+      max-width: 300px;
+      position: fixed;
+      left: 0%;
+	top: 40%;
+	opacity: 0;
+}
+
+#img7 {
+	max-width: 700px;
+}
+
+#img1 {
+	max-width: 400px;
+}
+
+#div1 .content {
+	text-shadow: 2px 0px black;
+}
+
+.view-bg {
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	color: white;
+	text-align: center;
+}
+
+#info{
+	position: fixed;
+	left: 5%;
+	width:  90%;
+	height:  40%;
+	top: 18%;
+	opacity: 0;
+	text-align: left;
+	text-shadow: 2px 2px black;
+	font-weight: bold;
+}
+
+#name {
+	position: fixed;
+	top: 8%;
+	left: 5%;
+	opacity: 0;
+	text-transform: uppercase;
+	text-shadow: 2px 0px black;
+	font-weight: bold;
+}
+
+#arrow-next {
+	position: fixed;
+	top: 90%;
+	left: 55%;
+	opacity: 0;
+}
+
+#arrow-back {
+	position: fixed;
+	top: 90%;
+	left: 45%;
+	opacity: 0;
+}
+
+.btn {
+	background-color: #5E88BF;
+	border: none; 
+	border-radius:  50%;
+	color: white;
+	padding: 10px 10px; 
+	font-size: 0.4em;
+	cursor: pointer; 
+	opacity: 0.8;
+}
+
+.btn:hover {
+	background-color: #A8AFC2;
+}
+
+#info li span {
+	font-size:  30px;
+	font-family: 'Yanone Kaffeesatz', sans-serif;
+	letter-spacing: 1px;
+	padding-left: 10px;
+}
+
+#info ul {
+	font-size: 25px;
+}	
+
+a {
+	text-decoration: none;
+	color: white;
+	font-family: 'Quando', serif;
+}
+
+a:hover {
+	color: darkgray;
+}
+
+@media only screen and (min-width: 751px) and (max-width:  1000px) {
+	html, body {  
+	      font-size: 35px;
+	}
+
+	.btn {
+		padding: 12px 12px; 
+		font-size: 0.4em;
+	}
+
+	#info{
+		top: 20%;
+	}
+}
+
+@media only screen and (min-width: 1001px) {
+	html, body {  
+	      font-size: 40px;
+	}
+
+	#info{
+		top: 25%;
+	}
+}
