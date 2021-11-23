@@ -3,80 +3,104 @@
     <head>
         <meta charset="utf-8">
         <meta name="viewport" content="width=device-width, initial-scale=1">
-        <title>title page</title>
+        <title>Vuochlang Chang</title>
         <link rel="stylesheet" href="styles.css"> 
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+		<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+		<link href="https://fonts.googleapis.com/css2?family=Nunito&family=Pacifico&family=Roboto&family=Source+Sans+Pro:wght@400&display=swap" rel="stylesheet">
+
+		<link href="https://fonts.googleapis.com/icon?family=Material+Icons"
+      rel="stylesheet">
     </head>
+
     <body>
 		<div id="body-wrapper">
-			<header>
-				<h1 id="my-name"><a href="#intro">Your Name</a></h1>
-				<nav>
-					<!-- <ul>
-						<li><a href="about.html">About</a></li>
-						<li><a href="gallery.html">Gallery</a></li>
-						<li><a href="links.html">Links</a></li>
-						<li><a href="contact.html">Contact</a></li>
-					</ul> -->
-                    <!-- contact = form, link = , about=intro, gallery = project->link -->
-                    <ul>
-						<li><a href="#intro">About</a></li>
-						<li><a href="#projects">Gallery</a></li>
-						<li><a href="links.html">Links</a></li>
-						<li><a href="#footer">Contact</a></li>
-					</ul>
-				</nav>
-			</header>
+			<div id="background">
+				<header>
+					<nav>
+	                    <!-- contact = form, link = , about=intro, gallery = project->link -->
+	                    <ul>
+							<li><a href="#intro">About</a></li>
+							<li><a href="#project1">Projects</a></li>
+							<li><a href="https://github.com/Vuochlang">GitHub</a></li>
+							<li><a href="#footer">Contact</a></li>
+						</ul>
+					</nav>
+				</header>
 
-			<div id="grid-container">
 				<div id="main">
-					<div id="image">
-						<img src="">
-					</div>
-					<p>
-						some greeting text
-					</p>
+					<h1 id="my-name"><a href="#intro">Vuochlang Chang</a></h1><br>
+					<p>Portfolio</p><br>
+					<span>&darr;</span>
 				</div>
-				<!-- <aside>
-				</aside> -->
-		   </div>
+				<img src="img/bg.jpg" alt="background image">
+			</div>
 
-           <div id='intro'>My introduction</div>
+			<div id='intro'>
+				<h2>Vuochlang Chang</h2>&mdash;&mdash;&mdash;<br>
+				<p>
+					Hi! My name is Vuochlang Chang, and I am a student at Washington State University Vancouver. I am majoring in Computer Science and Digital Technology and Culture. I am anticipating graduating in Spring 2023.
+				</p>
+			</div>
 
            <div id='projects'>
                <div class='project' id='project1'>
                     <a href="projects/blackbird/index.html">
-                        Blackbird
+                        <h2>Thirteen Ways of Looking at a Blackbird</h2>
                         <div class='project-info'>
-                            <section>image</section>
-                            <section>description</section>
+                        	<!-- <a href="projects/blackbird/index.html"> -->
+                            	<section>
+                            		<img src="img/blackbird.png" alt="Blackbird Project">
+                            	</section>
+                        	<!-- </a> -->
+                            <section>a one page HTML document with an external CSS stylesheet</section>
                         </div>
                     </a>
                </div>
                <div class='project' id='project2'>
                     <a href="projects/recipe/index.html">
-                        Recipe
+                        <h2>Recipe</h2>
                         <div class='project-info'>
-                            <section>image</section>
-                            <section>description</section>
+                            <section>
+                            	<img src="img/recipe.png" alt="Recipe Project">
+                            </section>
+                            <section>a one-page, responsive site for a recipe</section>
                         </div>
                     </a>
                 </div>
                 <div class='project' id='project3'>
                     <a href="projects/narrative/index.html">
-                        Narrative
+                        <h2>Narrative</h2>
                         <div class='project-info'>
-                            <section id='image'>image</section>
-                            <section id='des'>description</section>
+                            <section id='image'>
+                            	<img src="img/narrative.png" alt="Narrative Project"> 	
+                            </section>
+                            <section id='des'>Build a responsive, 1-5 page website that follows a sequential path or linear progression</section>
                         </div>
                     </a>
                 </div>
            </div>
 
 			<footer id="footer">
+				<h2>Contact Me</h2>&mdash;&mdash;&mdash;<br>
                 <div id='footer-grid'>
-                    <section>Your name</section>
-                    <section> Date</section>
-                    <section>Contact info</section>
+                   	<section>
+	                   	<a href="https://drive.google.com/file/d/1umtKOhlvRUCSMwxRMYZ70T_cwYwinCw_/view?usp=sharing" target="_blank">
+	                    	<i class="material-icons">description</i><br>
+	                    	Resume
+	                    </a>
+	                </section>
+                    <section>
+                    	<a href="tel:3605214659">
+                    	<i class="material-icons">phone</i><br>
+                    	(360) 521 - 4659
+                    </a>
+                    </section>
+                    <section>
+                    	<a href="mailto:vuochlang.chang@wsu.edu">
+                    	<i class="material-icons">email</i><br>
+                    	vuochlang.chang@wsu.edu</a>
+                    </section>
                 </div>
 			</footer>
 

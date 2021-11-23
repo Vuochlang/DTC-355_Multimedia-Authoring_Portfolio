@@ -45,9 +45,6 @@ table {
 /*don't touch the reset above*/
 
 
-
-
-
 /* Default Styles Below*/
 
 :root {
@@ -60,72 +57,119 @@ body {
 }
 
 #body-wrapper {
-    max-width: 700px;
-    margin: 5% auto;
     border: 1px solid red;
+    background-color: #608ee6;
 }
 
-#grid-container {
-    /* display: grid;
-    grid-template-columns: 3fr 1fr; */
+#background img{
+    position: relative;
+    background-size: cover;
+    width: 100%;
+    height: auto;
 }
 
 header {
-    padding: 2%;
-    border: 1px solid orange;
+    padding-top: 2%;
+    position: absolute;
+    /*border: 1px solid orange;*/
     display: grid;
-    grid-template-columns: 1fr 1fr;
+    grid-template-columns: 1fr;
+    z-index: 10;
+    width: 40%;
+    margin: 0 30%;
+    font-size: 10px;
 }
 
 nav {
-    border: 1px solid blue;
-    padding: 2%;
+    /*border: 1px solid blue;*/
+    font-family: 'Nunito', sans-serif;
+    z-index: 10;
 }
 
 nav ul {
     display: grid;
     grid-template-columns: repeat(4, 1fr);
     grid-gap: 2px;
-    border: 1px solid green;
+    /*border: 1px solid green;*/
 }
 
 nav li a  {
     display: block;
     text-align: center;
+    color:  white;
 }
 
+nav li a:hover {
+    text-decoration: underline;
+}
 
 #main {
-    min-height: 400px;
-    height: 68vh;
-    padding: 5%;
-    border: 1px solid lightblue;
-}
-
-aside {
-    padding: 5%;
-    border: 1px solid lightgreen;
-}
-
-footer {
-    padding: 5%;
-    border: 1px solid yellow;
+    position: absolute;
+    /*min-height: 400px;*/
+    /*height: 68vh;*/
+    /*padding: 5%;*/
+    /*border: 1px solid lightblue;*/
+    z-index: 10;  
+    width: 60%;
+    margin: 0 20%; 
+    margin-top: 20%; 
     text-align: center;
+    /*background-color: #608ee6;*/
+    /*padding-top: 20%;*/
 }
 
 #my-name {
     font-size: 30px;
+    font-family: 'Source Sans Pro', sans-serif;
+    font-weight: bold;
+    color: white;
+    text-transform: uppercase;
 }
 
+#my-name a:hover {
+    color: white;
+}
+
+#main p {
+    font-family: 'Nunito', sans-serif;
+    text-transform: uppercase;
+}
+
+#main span:hover {
+    color: white;
+}
+
+/*aside {
+    padding: 5%;
+    border: 1px solid lightgreen;
+}*/
+
 #intro {
-    height: 50vh;
+    /*background-color: #3A70C4;*/
+    background-color: white;
     text-align: center;
+    color: #608ee6;
+    font-family: 'Nunito', sans-serif;
+    font-size: 14px;
+    padding: 5%;
+}
+
+#intro h2 {
+    font-family: 'Pacifico', cursive;
+    font-size: 20px;
+    padding-bottom: 3%;
+}
+
+#intro p {
+    padding-top: 3%;
 }
 
 #projects {
     border: 1px solid green;
     display: grid;
     grid-template-rows: 1fr 1fr 1fr;
+    font-family: 'Nunito', sans-serif;
+    font-size: 15px;
 }
 
 .project {
@@ -134,12 +178,30 @@ footer {
     height: 600px;
 }
 
+.project h2 {
+    font-family: 'Source Sans Pro', sans-serif;
+    font-weight: bold;
+    padding: 2% 2%;
+    text-align: center;
+    font-size: 20px;
+    color: white;
+}
+
 .project-info {
     border: 1px solid orange;
     display: grid;
-    grid-template-rows: 1fr 4fr;
+    grid-template-rows: 4fr 1fr;
     grid-template-columns: 1fr;
     height: 90%;
+    color: white;
+}
+
+.project img {
+    width: 100%;
+}
+
+#project1 img {
+    max-width: 400px;
 }
 
 .project-info section {
@@ -155,28 +217,62 @@ a:hover {
     color: var(--secondary-color);
 }
 
-#footer {
-    /* height: 0px; */
+.project a:hover {
+    color: black;
+}
+
+footer {
+    padding: 5%;
+    /*border: 1px solid yellow;*/
+    text-align: center;
+    font-family: 'Nunito', sans-serif;
+    /*background-color: white;*/
+     color: white;
+}
+
+footer h2 {
+    font-family: 'Source Sans Pro', sans-serif;
+    font-weight: bold;
+    padding: 2% 2%;
+    padding-bottom: 0%;
+    text-align: center;
+    font-size: 20px;
+    text-transform: uppercase;
+    /*color: white;*/
+}
+
+#footer a{
+    color: white;
+}
+
+#footer a:hover {
+    color: var(--secondary-color);
+}
+
+#footer a i{
+    margin-bottom: 3%;
+    font-size:  30px;
 }
 
 #footer-grid {
-    border: 1px solid black;
+    /*border: 1px solid black;*/
     display: grid;
     grid-template-rows: 1fr 1fr 1fr;
     grid-template-columns: 1fr;
+
 }
 
 #footer-grid section {
     margin: 3%;
-    border: 1px solid green;
+    /*border: 1px solid green;*/
     height: 100px;
 }
 
 
 @media only screen and (min-width: 751px) and (max-width: 1000px) {
     #body-wrapper {
-        max-width: 900px;
-        margin: 5% auto;
+      /*  max-width: 900px;
+        margin: 5% auto;*/
     }
 
     .project {
@@ -184,7 +280,7 @@ a:hover {
     }
 
     .project-info {
-        grid-template-columns: 1fr 2fr;
+        grid-template-columns: 2fr 1fr;
         grid-template-rows: 1fr;
         height: 90%;
     }
@@ -201,8 +297,8 @@ a:hover {
 
 @media only screen and (min-width: 1001px) {
     #body-wrapper {
-        max-width: 900px;
-        margin: 5% auto;
+        /*max-width: 900px;*/
+        /*margin: 5% auto;*/
     }
 
     .project {
@@ -210,7 +306,7 @@ a:hover {
     }
 
     .project-info {
-        grid-template-columns: 1fr 2fr;
+        grid-template-columns: 2fr 1fr;
         grid-template-rows: 1fr;
         height: 90%;
     }
