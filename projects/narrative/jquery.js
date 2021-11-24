@@ -15,7 +15,7 @@ let info7 = "<ul><li>Diameter: <span>116,464 km</span></li><li>Distance from Sun
 let info8 = "<ul><li>Diameter: <span>50,724 km</span></li><li>Distance from Sun: <span>2,870,658,186 km</span></li><li>Length of Year: <span>84.0 Earth years</span></li></ul>";
 let info9 = "<ul><li>Diameter: <span>49,244 km</span></li><li>Distance from Sun: <span>4,498,396,441 km</span></li><li>Length of Year: <span>164.8 Earth years</span></li></ul>";
 
-let info10 = '<ul><li>All images are creative commons</li><li>Source: <a href="https://space-facts.com/planets/" target="_blank">Planet Facts</a></li></ul><hr><p id="ps">This narrative project is a combination of Skrollr and jQueryt. I wanted to combine each functionality and learn how they can connect. I came up with this project idea because I wanted to create a smooth flow between objects and add buttons to interact with the screen. While building this project, my challenges and learning outcome are using jQuery to change the properties of things from the HTML file.</p>';
+let info10 = '<ul><li>All images are creative commons</li><li>Source: <a href="https://space-facts.com/planets/" target="_blank">Planet Facts</a></li></ul><hr><p id="ps">This narrative project is a combination of Skrollr and jQuery. I wanted to combine each functionality and learn how they can connect. I came up with this project idea because I wanted to create a smooth flow between objects and add buttons to interact with the screen. While building this project, my challenges and learning outcome are using jQuery to change the properties of things from the HTML file.</p>';
 
 let planets = {
 	1: ["Sun", info1],
